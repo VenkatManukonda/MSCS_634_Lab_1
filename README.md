@@ -1,4 +1,4 @@
-## MSCS 634 Lab 1: Data Visualization, Data Preprocessing, and Statistical Analysis
+## MSCS_634_Lab_1: Data Visualization, Data Preprocessing, and Statistical Analysis
 ### Purpose
 
 The objective of this lab was to apply data visualization, preprocessing, and statistical analysis techniques to a real-world used car dataset using Python and Jupyter Notebook. Rather than working directly with raw data, the lab emphasized the importance of preparing data through cleaning, transformation, and reduction before performing analysis. This process provided an opportunity to examine how data quality influences the reliability of analytical results and insights.
