@@ -1,16 +1,15 @@
 ## MSCS_634_Lab_1: Data Visualization, Data Preprocessing, and Statistical Analysis
-### Purpose
 
-The objective of this lab was to apply data visualization, preprocessing, and statistical analysis techniques to a real-world used car dataset using Python and Jupyter Notebook. Rather than working directly with raw data, the lab emphasized the importance of preparing data through cleaning, transformation, and reduction before performing analysis. This process provided an opportunity to examine how data quality influences the reliability of analytical results and insights.
+### Purpose
+This lab focused on exploring a used car dataset using Python in Jupyter Notebook. The goal was to examine the data through visualization, preprocess the data to improve quality, and apply statistical analysis techniques to better understand patterns in the dataset. Working through the preprocessing steps demonstrated how raw data often requires cleaning and transformation before meaningful analysis can be performed.
 
 ### Key Insights
-
-The scatter plot showed that vehicle prices generally declined with increasing age, suggesting that depreciation plays a significant role in determining market value. The histogram further demonstrated that most vehicles were concentrated in the lower- and mid-range price categories, while a smaller number of expensive vehicles skewed the distribution to the right.
-
-The statistical analysis reinforced these observations. Measures of central tendency provided a useful estimate of typical vehicle prices, while dispersion measures highlighted substantial variability across listings. Correlation analysis showed that numerical attributes were not independent of one another, helping identify relationships that may influence vehicle pricing decisions.
+The visualizations revealed a noticeable relationship between vehicle age and asking price. As vehicle age increased, asking prices generally declined, reflecting depreciation's impact on vehicle value. The price distribution also showed that most vehicles were concentrated in the lower- and mid-range price categories, while a smaller number of expensive vehicles skewed the distribution to the right.
+The statistical analysis supported these observations. Measures of central tendency provided a view of typical vehicle pricing, while dispersion measures highlighted substantial variability across listings. Correlation analysis helped identify relationships among numerical attributes and showed that age and mileage were important factors influencing vehicle prices.
 
 ### Challenges and Decisions
+One challenge involved the kmDriven column because the mileage values were stored as text, including formatting characters such as commas and the "km" suffix. These values had to be cleaned and converted into a numerical format before missing values could be handled and statistical calculations could be performed.
+To maintain data quality, missing mileage values were replaced using the column mean. Outliers were identified using the Interquartile Range method and removed to reduce the influence of unusually high-priced listings. Data reduction was performed by removing less relevant columns, while Min-Max scaling was applied to selected numerical attributes to place them on a comparable scale. These decisions helped produce a cleaner dataset better suited for analysis and visualization.
 
-One challenge encountered during the preprocessing stage involved the kmDriven attribute. Although it represented numerical mileage information, the values were stored as text and included formatting characters such as commas and the "km" suffix. These values had to be cleaned and converted into a numerical format before calculations could be performed.
-
-Several preprocessing decisions were made to improve data quality. Missing mileage values were replaced using the column mean to preserve observations while minimizing information loss. Outliers in asking price were identified using the Interquartile Range (IQR) method and removed to reduce the influence of extreme values on the analysis. In addition, less relevant attributes were removed during data reduction, and Min-Max scaling was applied to selected numerical variables to place them on a comparable scale. These steps resulted in a cleaner dataset, better suited for visualization and statistical analysis.
+### Repository Contents
+This repository contains the Jupyter Notebook used for the analysis, the original used car dataset, a screenshots folder containing all required screenshots, and supporting documentation. The screenshots folder includes evidence of dataset loading, visualizations, preprocessing steps, statistical calculations, and correlation analysis completed during the lab.
