@@ -1,15 +1,15 @@
 ## MSCS 634 Lab 1: Data Visualization, Data Preprocessing, and Statistical Analysis
-###Purpose
+### Purpose
 
 The objective of this lab was to apply data visualization, preprocessing, and statistical analysis techniques to a real-world used car dataset using Python and Jupyter Notebook. Rather than working directly with raw data, the lab emphasized the importance of preparing data through cleaning, transformation, and reduction before performing analysis. This process provided an opportunity to examine how data quality influences the reliability of analytical results and insights.
 
-###Key Insights
+### Key Insights
 
 The visualizations revealed several meaningful patterns within the dataset. The scatter plot showed that vehicle prices generally declined as vehicle age increased, suggesting that depreciation plays a significant role in determining market value. The histogram further demonstrated that most vehicles were concentrated within lower and mid-range price categories, while a smaller number of expensive vehicles created a right-skewed distribution.
 
 The statistical analysis reinforced these observations. Measures of central tendency provided a useful estimate of typical vehicle prices, while dispersion measures highlighted substantial variability across listings. Correlation analysis showed that numerical attributes were not independent of one another and helped identify relationships that may influence vehicle pricing decisions.
 
-###Challenges and Decisions
+### Challenges and Decisions
 
 One challenge encountered during the preprocessing stage involved the kmDriven attribute. Although it represented numerical mileage information, the values were stored as text and included formatting characters such as commas and the "km" suffix. These values had to be cleaned and converted into a numerical format before calculations could be performed.
 
